@@ -5,12 +5,11 @@ colcon build --packages-select ldlidar_driver_ros2
 
 ②设备别名：端口设备重命名
 launch中启动的LD06/STL-19P/LD19雷达默认设备名为：/dev/ldlidar_serial，别名文件是“ldlidar_udev.sh”，
-如果您使用的ttl电平转换芯片为CP2102，设备号需要改为0001；
 
 具体修改方法请分别查看对应的驱动资料。
 
 ③运行方法
-启动：STL-19P雷达
+启动：LD-06雷达
 source install/setup.bash
 ros2 launch ldlidar_driver_ros2 ldlidar_driver.launch.py
 
